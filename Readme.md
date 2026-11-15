@@ -1,9 +1,13 @@
-**OSI / TCP-IP Network Simulator** Speed
+# OSI / TCP-IP Network Simulator
 
-Select mode: drag devices; click a cable to bring it down/up. Link mode: click two devices. Orange dot = one frame on the wire (visual abstraction).
+An interactive educational simulator for visualising how data moves through a simple network. It demonstrates ARP broadcasts, switch MAC learning, router longest-prefix matching, and TTL updates.
 
-Tutorial · limits
+This project is intended for teaching and interactive learning. It is not a full network emulator and does not implement the complete behaviour of DNS, DHCP, NAT, VLANs, TCP flow control, or wireless networking.
 
-1\) Pick scenario D. 2) Select PC1 → Send ping to PC2’s IP. 3) Press Step repeatedly: ARP request is broadcast, switch learns MACs, router does longest-prefix match and TTL−1, then new MACs on the far LAN. 4) Click any event, open the Packet tab: highlighted rows are fields that changed since the previous hop (MACs, TTL) while IP src/dst stay. Build your own: +PC/+Switch/+Router, Link mode, then set IPs in the Device tab.
+## Contact
 
-**Educational simulation, not a real emulator.** Not implemented: DNS/HTTP, DHCP, VLANs, NAT, hubs/collisions, wireless, TCP retransmission/windowing (fields shown, values fixed), ICMP error messages, MAC aging, fragmentation. TCP/UDP use fixed ports (TCP 80, UDP 5000). Presentation/Session layers have no real headers here and are explained rather than simulated.
+Meshan Nawod · [meshannawodme@gmail.com](mailto:meshannawodme@gmail.com)
+
+## License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
